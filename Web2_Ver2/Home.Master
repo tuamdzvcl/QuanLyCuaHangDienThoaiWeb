@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="Web2_Ver2.Home" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/homeStyle.css">
+    <link rel="shortcut icon" href="./Assets/images/vnua.png">
+    <script src="https://kit.fontawesome.com/07ed03b68e.js" crossorigin="anonymous"></script>
+    <title>Quản Lí Kho Điện Thoại</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="label1">Xin Chào</h1>
+            <i id="iconUser" class="fa-solid fa-user"></i>
+            <h4 id="label2" runat="server">Admin</h4>
+            <h4 id="label4" runat="server">Chức vụ: Admin</h4>
+            <h4 id="label3" runat="server">16:16-24/09/2023</h4>
+        </div>
+        <div class="content_left">
+            <div>
+                <i class="fa-solid fa-house-chimney"></i>
+                <a href="./Home.aspx">
+                    <h4 class="label_content">Trang Chủ</h4>
+                </a>
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile-screen"></i>
+                <a href="./SanPham.aspx">
+                    <h4 class="label_content">Sản Phẩm</h4>
+                </a>
+            </div>
+            <div id="divNCC" runat="server">
+                <i class="fa-solid fa-handshake"></i>
+                <a href="./NhaCungCap.aspx">
+                    <h4 class="label_content">Nhà Cung Cấp</h4>
+                </a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="./XuatHang.aspx">
+                    <h4 class="label_content">Xuất hàng</h4>
+                </a>
+            </div>
+            <div>
+                <i class="fa-solid fa-warehouse"></i>
+                <a href="./NhapHang.aspx">
+                    <h4 class="label_content">Nhập Hàng</h4>
+                </a>
+            </div>
+            <div id="QLNV" runat="server">
+                <i class="fa-solid fa-users"></i>
+                <a href="./NhanVien.aspx">
+                    <h4 class="label_content">Nhân Viên</h4>
+                </a>
+            </div>
+            <div id="divTK" runat="server">
+                <i class="fa-solid fa-chart-simple"></i>
+                <a href="./ThongKe.aspx">
+                    <h4 class="label_content">Thống Kê</h4>
+                </a>
+            </div>
+        </div>
+        <div class="content_right">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+            <div style="float: left; display: inline-block; margin-left: 5px">
+                <i style="color: white" class="fa-solid fa-right-from-bracket"></i>
+                <a href="./Login.aspx">
+                    <h4 class="label_content">Đăng Xuất</h4>
+                </a>
+            </div>
+            <h4>Copyright © 2023 | By SinhVien VNUA</h4>
+        </div>
+    </div>
+</body>
+</html>
+
+
